@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+header::before{
+    content: '';
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    background-color: #0066FF;
+    left: -100px;
+    opacity: 50%;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+}
