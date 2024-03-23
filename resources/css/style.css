@@ -74,21 +74,18 @@ main::before{
 } */
 
 .virar{
-    animation: virar 1s forwards;
+    animation: virar 0.3s forwards;
 }
 
 @keyframes virar {
     0%{
-        transform: scaleX(1);
+        transform: rotateY(0deg);
+        /* background-color: white; */
     } 100% {
-        transform: scaleX(1);
-        opacity: 100%;
         background-color: white;
+        transform: rotateY(180deg);
     } 50% {
-        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(0,34,85,1) 100%);
-        transform: scaleX(0.6);
-        filter: blur(2px);
-    } 75% {
-        background: linear-gradient(90deg, rgba(0,34,85,1) 0%, rgba(0,102,255,1) 100%);
+        transform: rotateX(10deg);
     }
+
 }
