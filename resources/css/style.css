@@ -64,14 +64,14 @@ main::before{
     position: relative;
 }
 
-.two::before, .four::before, .five::before, .seven::before, .ten::before, .twoelve::before{
+/* .two::before, .four::before, .five::before, .seven::before, .ten::before, .twoelve::before{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 8px solid #0066FF;
     content: '';
     position: absolute;
-}
+} */
 
 .virar{
     animation: virar 1s forwards;
@@ -85,8 +85,10 @@ main::before{
         opacity: 100%;
         background-color: white;
     } 50% {
+        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(0,34,85,1) 100%);
         transform: scaleX(0.6);
         filter: blur(2px);
-        background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(0,34,85,1) 100%);
+    } 75% {
+        background: linear-gradient(90deg, rgba(0,34,85,1) 0%, rgba(0,102,255,1) 100%);
     }
 }
