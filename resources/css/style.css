@@ -58,6 +58,7 @@ main::before{
     transition: 0.3s;
     /* border-radius: 7px; */
     border: dashed 2px rgba(255, 255, 255, 0.151);
+    font-size: 2rem;
 }
 
 .two, .four, .six, .eight{
