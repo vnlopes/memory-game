@@ -7,9 +7,15 @@
     <title>Memorize</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./resources/css/style.css" />
-    <link rel="shortcut icon" href="/resources/images/light.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/resources/images/light.svg"
+      type="image/x-icon"
+    />
   </head>
-  <body class="min-h-screen select-none overflow-x-hidden items-center relative flex flex-col bg-black">
+  <body
+    class="min-h-screen select-none overflow-x-hidden items-center relative flex flex-col bg-black"
+  >
     <header
       class="border-b border-solid overflow-hidden border-slate-500 w-full h-[90px] flex items-center justify-center"
     >
@@ -31,50 +37,102 @@
         >
       </div>
     </header>
-    <main class="flex justify-center items-center w-full max-w-[1920px] flex-col h-full relative">
-
-      <div class="time w-[90%] h-[30px] relative"><span class="absolute mt-10 right-0 text-white text-4xl font-semibold">0.0</span></div>
-
-        <div
-          class="game w-[250px] sm:w-[420px] justify-center hover:[&>*]:opacity-[90%] gap-1 mt-[130px] [&>*]:flex flex-wrap [&>*]:w-[60px] sm:[&>*]:w-[100px] hover:[&>*]:scale-[0.97] [&>*]:h-[60px] sm:[&>*]:h-[100px] flex"
+    <main
+      class="flex justify-center items-center w-full max-w-[1920px] flex-col h-full relative"
+    >
+      <div class="time w-[90%] h-[30px] relative">
+        <span class="absolute mt-10 right-0 text-white text-4xl font-semibold"
+          >0.0</span
         >
-          <button onclick="vire(this)" class="one1 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="two2 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="tree3 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="four4 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="five5 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="six6 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="seven7 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="eight8 bg-[#0066ff]"></button>
-          <button onclick="vire(this)" class="nine9 bg-[#0066ff]"></button>
-          <button onclick="vire(this)" class="ten10 bg-[#0066FF]"></button>
-          <button onclick="vire(this)" class="eleven11 bg-[#0066ff]"></button>
-          <button onclick="vire(this)" class="twoelve12 bg-[#0066FF]"></button>
-        </div>
-        <img class="bg-img max-w-600px sm:max-w-[1080px] opacity-[20%]" src="/resources/images/grid.png" alt="">
-          
-        <svg class="mt-[100px] hover:scale-[1.1] transition-all" width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </div>
+
+      <div
+        class="game w-[250px] sm:w-[420px] justify-center hover:[&>*]:opacity-[90%] gap-1 mt-[130px] [&>*]:flex flex-wrap [&>*]:w-[60px] sm:[&>*]:w-[100px] hover:[&>*]:scale-[0.97] [&>*]:h-[60px] sm:[&>*]:h-[100px] flex"
+      >
+        <button onclick="vire(this)" class="one1 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="two2 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="tree3 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="four4 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="five5 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="six6 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="seven7 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="eight8 bg-[#0066ff]"></button>
+        <button onclick="vire(this)" class="nine9 bg-[#0066ff]"></button>
+        <button onclick="vire(this)" class="ten10 bg-[#0066FF]"></button>
+        <button onclick="vire(this)" class="eleven11 bg-[#0066ff]"></button>
+        <button onclick="vire(this)" class="twoelve12 bg-[#0066FF]"></button>
+      </div>
+      <img
+        class="bg-img max-w-600px sm:max-w-[1080px] opacity-[20%]"
+        src="/resources/images/grid.png"
+        alt=""
+      />
+
+      <a class="flex justify-center items-center" href="https://github.com/vnlopes" target="_blank">
+        <svg
+          class="mt-[100px] hover:scale-[1.1] transition-all"
+          width="46"
+          height="45"
+          viewBox="0 0 46 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_d_1_63)">
-          <path d="M23 0C33.4975 0 42 8.48815 42 18.9679C41.999 22.9422 40.7496 26.8161 38.4276 30.0443C36.1057 33.2725 32.8281 35.6926 29.0563 36.9638C28.1063 37.1534 27.75 36.5607 27.75 36.0628C27.75 35.4226 27.7738 33.3836 27.7738 30.8466C27.7738 29.0684 27.18 27.9303 26.4913 27.3375C30.7188 26.8633 35.16 25.2511 35.16 17.9721C35.16 15.8856 34.4238 14.2022 33.2125 12.8745C33.4025 12.4003 34.0675 10.4561 33.0225 7.84798C33.0225 7.84798 31.4313 7.32637 27.7975 9.7922C26.2775 9.36542 24.6625 9.15203 23.0475 9.15203C21.4325 9.15203 19.8175 9.36542 18.2975 9.7922C14.6638 7.35008 13.0725 7.84798 13.0725 7.84798C12.0275 10.4561 12.6925 12.4003 12.8825 12.8745C11.6713 14.2022 10.935 15.9094 10.935 17.9721C10.935 25.2274 15.3525 26.8633 19.58 27.3375C19.0338 27.8117 18.535 28.6416 18.3688 29.8745C17.2763 30.3724 14.545 31.1785 12.835 28.3096C12.4788 27.7406 11.41 26.3417 9.91375 26.3654C8.3225 26.3891 9.2725 27.2664 9.9375 27.6221C10.745 28.0725 11.6713 29.7559 11.885 30.3013C12.265 31.3682 13.5 33.4073 18.2738 32.53C18.2738 34.1186 18.2975 35.6123 18.2975 36.0628C18.2975 36.5607 17.9413 37.1297 16.9913 36.9638C13.207 35.7063 9.91549 33.2911 7.58362 30.061C5.25174 26.8308 3.99791 22.9496 4 18.9679C4 8.48815 12.5025 0 23 0Z" fill="url(#paint0_linear_1_63)"/>
+            <path
+              d="M23 0C33.4975 0 42 8.48815 42 18.9679C41.999 22.9422 40.7496 26.8161 38.4276 30.0443C36.1057 33.2725 32.8281 35.6926 29.0563 36.9638C28.1063 37.1534 27.75 36.5607 27.75 36.0628C27.75 35.4226 27.7738 33.3836 27.7738 30.8466C27.7738 29.0684 27.18 27.9303 26.4913 27.3375C30.7188 26.8633 35.16 25.2511 35.16 17.9721C35.16 15.8856 34.4238 14.2022 33.2125 12.8745C33.4025 12.4003 34.0675 10.4561 33.0225 7.84798C33.0225 7.84798 31.4313 7.32637 27.7975 9.7922C26.2775 9.36542 24.6625 9.15203 23.0475 9.15203C21.4325 9.15203 19.8175 9.36542 18.2975 9.7922C14.6638 7.35008 13.0725 7.84798 13.0725 7.84798C12.0275 10.4561 12.6925 12.4003 12.8825 12.8745C11.6713 14.2022 10.935 15.9094 10.935 17.9721C10.935 25.2274 15.3525 26.8633 19.58 27.3375C19.0338 27.8117 18.535 28.6416 18.3688 29.8745C17.2763 30.3724 14.545 31.1785 12.835 28.3096C12.4788 27.7406 11.41 26.3417 9.91375 26.3654C8.3225 26.3891 9.2725 27.2664 9.9375 27.6221C10.745 28.0725 11.6713 29.7559 11.885 30.3013C12.265 31.3682 13.5 33.4073 18.2738 32.53C18.2738 34.1186 18.2975 35.6123 18.2975 36.0628C18.2975 36.5607 17.9413 37.1297 16.9913 36.9638C13.207 35.7063 9.91549 33.2911 7.58362 30.061C5.25174 26.8308 3.99791 22.9496 4 18.9679C4 8.48815 12.5025 0 23 0Z"
+              fill="url(#paint0_linear_1_63)"
+            />
           </g>
           <defs>
-          <filter id="filter0_d_1_63" x="0" y="0" width="46" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset dy="4"/>
-          <feGaussianBlur stdDeviation="2"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_63"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_63" result="shape"/>
-          </filter>
-          <linearGradient id="paint0_linear_1_63" x1="33" y1="3.5" x2="14.5" y2="37" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#0066FF"/>
-          <stop offset="1" stop-color="#003D99"/>
-          </linearGradient>
+            <filter
+              id="filter0_d_1_63"
+              x="0"
+              y="0"
+              width="46"
+              height="45"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_1_63"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_1_63"
+                result="shape"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_1_63"
+              x1="33"
+              y1="3.5"
+              x2="14.5"
+              y2="37"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#0066FF" />
+              <stop offset="1" stop-color="#003D99" />
+            </linearGradient>
           </defs>
-          </svg>
-        </a>
+        </svg>
+      </a>
     </main>
   </body>
   <script src="/function/script.js"></script>
