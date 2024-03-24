@@ -50,7 +50,7 @@ main::before{
     filter: blur(100px);
 }
 
-.game div{
+.game button{
     align-items: center;
     justify-content: center;
     display: flex;

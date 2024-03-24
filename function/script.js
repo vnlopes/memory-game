@@ -18,7 +18,16 @@ let arrRand = arrImg.sort(() => (Math.random() > 0.5 ? 2 : -1));
 let cont = 12;
 
 const vire = (aqui) => {
-  cont--;
+
+  aqui.disabled = true
+
+  if(cont != 0){
+    cont--
+  } else{
+    vire = null
+  }
+
+  console.log(cont)
 
   aqui.classList.add("virar");
   aqui.innerHTML = arrImg[cont];
